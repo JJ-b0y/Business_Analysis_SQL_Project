@@ -102,4 +102,4 @@ With this latest insight, we will go back and adjust our earlier query (Customer
 ## Technical Details
 - **Database:** PostgreSQL.
 - **Analysis Tools:** PostgreSQL, PGAdmin, DBeaver and VS Code.
-- **Visualization:** ChatGPT.
+- **Visualization:** ChatGPT, Google Colab, Pandas and Matplotlib.
