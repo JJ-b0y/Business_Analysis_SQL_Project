@@ -3,7 +3,7 @@
 ## Overview
 Analysis of customer behaviour, lifetime value, and retention for an e-commerce company to improve customer retention and maximize revenue.
 In order to commence, a view was created.
-[📽️*Query*: [Cohort_View](Scripts\cohort_view.sql)]
+[📽️*Query*: [Cohort_View](Scripts/cohort_view.sql)]
 
 ## Business Questions
 1. **Customer Segmentation:** Who are our most valuable customers?
@@ -49,11 +49,11 @@ Cohort: Grouping customers according to their first year of purchase.
 - Analyzed customer retention at a cohort level.
 
 First, we analyze average customer revenue by their cohort year over time.
-![Customer Revenue by Cohort Year](images\customer_revenue_cohort_year.png)
+![Customer Revenue by Cohort Year](images/customer_revenue_cohort_year.png)
 Visualizing the analysis, 2015-2017 showed consistent spending from customers, but from 2018, customer spending decreased. 2020 being the worst could be attributed to COVID. This finding is concerning, that customer revenue per cohort year is droping year after year.
 
 However, after deeper analysis on what contributes to the total revenue based on the days since the first purchase, the total revenue (customer spending) on the first purchase is over $127M. After that, subsequent customer spending dropped significantly to about $50,000 or less in total. This can be visualized in percentages as shown below:
-![Revenue Distribution Since First Purchase](images\revenue_distribution_since_first_purchase.png)
+![Revenue Distribution Since First Purchase](images/revenue_distribution_since_first_purchase.png)
 Insights from the chart above suggests that, on average, a customer spends about 60% of their total_money_spent on the first purchase.
 
 With this latest insight, we will go back and adjust our earlier query (Customer Revenue by Cohort Year) to take account for this. That is, for each Cohort Year, we will only consider the first purchase of each customer, and ignore subsequent purchases since we have found out on average customers spend significanly more on the first purchase.
@@ -62,7 +62,7 @@ With this latest insight, we will go back and adjust our earlier query (Customer
 
 📊**Visualization:**
 
-![Cohort Analysis](images\customer_revenue_cohort_year_adjusted.png)
+![Cohort Analysis](images/customer_revenue_cohort_year_adjusted.png)
 
 💡**Key Findings:**
 - The visual from our adjusted query is even more pronouced than the earlier one, as expressed by the exponential trend line.
@@ -87,7 +87,7 @@ With this latest insight, we will go back and adjust our earlier query (Customer
 
 📊**Visualization:**
 
-![Customer Churn](images\customer_status_by_cohort_year.png)
+![Customer Churn](images/customer_status_by_cohort_year.png)
 
 💡**Key Findings:**
 - Cohort churn stabilizes at 90% after 2-3 years, indicating a predictable long-term retention pattern.
@@ -101,5 +101,5 @@ With this latest insight, we will go back and adjust our earlier query (Customer
 
 ## Technical Details
 - **Database:** PostgreSQL.
-- **Analysis Tools:** PostgreSQL, DBeaver and VS Code.
+- **Analysis Tools:** PostgreSQL, PGAdmin, DBeaver and VS Code.
 - **Visualization:** ChatGPT.
