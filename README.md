@@ -21,7 +21,7 @@ In order to commence, a view was created.
 
 📊**Visualization:**
 
-![Total LTV Distribution](images\ltv_distribution_pie_chart.png)
+![Total LTV Distribution](images/ltv_distribution_pie_chart.png)
 
 💡**Key Findings:**
 - High-value segment (25% of customers) accounts for 65.7% of revenue ($135.6M).
