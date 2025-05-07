@@ -17,7 +17,7 @@ In order to commence, a view was created.
 - Assigned customers to High, Mid, and Low-value segments.
 - Calculated key metrics: Total Revenue.
 
-📽️*Query*: [1_Customer_Segmentation](1_customer_segmentation.sql)
+📽️*Query*: [1_Customer_Segmentation](Scripts/1_customer_segmentation.sql)
 
 📊**Visualization:**
 
@@ -58,7 +58,7 @@ Insights from the chart above suggests that, on average, a customer spends about
 
 With this latest insight, we will go back and adjust our earlier query (Customer Revenue by Cohort Year) to take account for this. That is, for each Cohort Year, we will only consider the first purchase of each customer, and ignore subsequent purchases since we have found out on average customers spend significanly more on the first purchase.
 
-📽️*Query*: [2_Cohort_Analysis](2_cohort_analysis.sql)
+📽️*Query*: [2_Cohort_Analysis](Scripts/2_cohort_analysis.sql)
 
 📊**Visualization:**
 
@@ -83,7 +83,7 @@ With this latest insight, we will go back and adjust our earlier query (Customer
 - Analyzed last purchase patterns.
 - Calculated customer-specific metrics.
 
-📽️*Query*: [3_Retention_Analysis](3_retention_analysis.sql)
+📽️*Query*: [3_Retention_Analysis](Scripts/3_retention_analysis.sql)
 
 📊**Visualization:**
 
